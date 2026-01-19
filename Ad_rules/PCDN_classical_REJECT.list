@@ -17,10 +17,6 @@ DOMAIN,p2pupdate.gamedl.qq.com,REJECT
 DOMAIN,p2pupgrade.gamedl.qq.com,REJECT
 DOMAIN,pcdn.yximgs.com,REJECT
 DOMAIN,stun.hitv.com,REJECT
-URL-REGEX,"^https?:\/\/(?:[^\/]+\.)*pcdn[^\/]*biliapi\.net",REJECT
-URL-REGEX,"^https?:\/\/(?:[^\/]+\.)*pcdn[^\/]*youku\.com",REJECT
-URL-REGEX,"^https?:\/\/(?:[^\/]+\.)*p2p[^\/]*douyucdn\.cn",REJECT
-URL-REGEX,"^https?:\/\/(?:[^\/]+\.)*p2p[^\/]*qq\.com",REJECT
 DOMAIN-SUFFIX,stun.douyucdn.cn,REJECT
 DOMAIN-SUFFIX,stun1.douyucdn.cn,REJECT
 DOMAIN-SUFFIX,dyp2p-ali.douyucdn.cn,REJECT
