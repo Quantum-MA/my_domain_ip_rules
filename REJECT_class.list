@@ -1,1 +1,5 @@
-
+DOMAIN-SUFFIX,example.com,REJECT
+DOMAIN,api.example.com,DIRECT
+DOMAIN-KEYWORD,ads,REJECT
+IP-CIDR,1.2.3.0/24,REJECT
+URL-REGEX,^https?:\/\/ads\.,REJECT
