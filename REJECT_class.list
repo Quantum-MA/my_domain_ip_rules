@@ -3,18 +3,15 @@
 #DOMAIN-KEYWORD,ads,REJECT
 #IP-CIDR,1.2.3.0/24,REJECT
 #URL-REGEX,^https?:\/\/ads\.,REJECT
-
 # ===============================
 # Block Parallels Desktop
 # ===============================
-
 DOMAIN,download.parallels.com,REJECT
 DOMAIN,download.parallels.com.cdn.cloudflare.net,REJECT
 DOMAIN,update.parallels.com,REJECT
 DOMAIN,update.parallels.com.cdn.cloudflare.net,REJECT
 DOMAIN,desktop.parallels.com,REJECT
 DOMAIN,desktop.parallels.com.cdn.cloudflare.net,REJECT
-
 DOMAIN,www.parallels.cn,REJECT
 DOMAIN,www.parallels.com,REJECT
 DOMAIN,www.parallels.de,REJECT
@@ -37,9 +34,7 @@ DOMAIN,pax-manager.myparallels.com,REJECT
 DOMAIN,myparallels.com,REJECT
 DOMAIN,my.parallels.com,REJECT
 DOMAIN,reportus.parallels.com,REJECT
-
-
-# Block Apple Software Update
+# ===========Block Apple Software Update=============
 DOMAIN-SUFFIX,swdist.apple.com,REJECT
 DOMAIN-SUFFIX,swscan.apple.com,REJECT
 DOMAIN-SUFFIX,swcdn.apple.com,REJECT
