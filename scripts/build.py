@@ -15,7 +15,7 @@ for line in SRC_FILE.read_text(encoding="utf-8").splitlines():
     s = line.strip()
     if not s or s.startswith("#") or s.startswith(";"):
         continue
-    # 分割成字段
+    ## 分割成字段
     parts = s.split(",")
     if len(parts) < 2:
         continue
