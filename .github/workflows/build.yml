@@ -12,8 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ 检出仓库
+      # 1️⃣ 检出仓库，但不要拉取远程历史
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # 获取完整历史
 
       # 2️⃣ 安装 Python
       - uses: actions/setup-python@v5
@@ -25,21 +27,19 @@ jobs:
         run: |
           python scripts/build.py
 
-      # 4️⃣ 提交并强制 push
-      - name: Commit and push
+      # 4️⃣ 强制提交并 push，覆盖远程
+      - name: Commit and force push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          # 添加生成的三份文件
           git add my_Remot_rule_DIRECT.list
           git add my_Remot_rule_REJECT.list
           git add my_Remot_rule_PROXY.list
 
-          # commit，如果没有改动不会报错
           git commit -m "auto: rebuild my_Remot_rule lists" || echo "No changes to commit"
 
-          # 强制 push，覆盖远程，避免 rebase 冲突
+          # 强制覆盖远程，不做 pull / rebase
           git push origin main --force
