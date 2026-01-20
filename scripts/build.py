@@ -1,7 +1,7 @@
 from pathlib import Path
 from datetime import datetime
 
-SRC_FILE = Path("src/my_rule.list")
+SRC_FILE = Path("src/my_class.list")
 
 # 输出文件
 DST_FILES = {
