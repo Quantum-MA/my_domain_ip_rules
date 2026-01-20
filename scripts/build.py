@@ -17,8 +17,7 @@ for line in SRC_FILE.read_text(encoding="utf-8").splitlines():
 header = [
     f"# This file is auto-generated from src/my_class.list",
     f"# Generated at {datetime.utcnow().isoformat()} UTC",
-    "# Do not edit manually; edit src/my_class.list instead",
-    ""
+    "# Do not edit manually; edit src/my_class.list instead"
 ]
 
 DST_FILE.write_text("\n".join(header + output) + "\n", encoding="utf-8")
