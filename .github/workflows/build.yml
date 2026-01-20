@@ -33,7 +33,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          # 添加三份生成文件
+          # 添加生成的三份文件
           git add my_Remot_rule_DIRECT.list
           git add my_Remot_rule_REJECT.list
           git add my_Remot_rule_PROXY.list
