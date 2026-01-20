@@ -20,7 +20,7 @@ for line in SRC_FILE.read_text(encoding="utf-8").splitlines():
     if len(parts) < 2:
         continue
     # 倒数第一个是策略字段（DIRECT/REJECT/默认代理）
-    policy_field = parts[-1].strip().upper()
+    policy_field = parts[-2].strip().upper()
     if policy_field in ["DIRECT", "REJECT"]:
         policy_upper = policy_field
     else:
