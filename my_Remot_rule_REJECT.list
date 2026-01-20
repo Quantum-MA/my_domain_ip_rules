@@ -1,0 +1,34 @@
+# 自动生成文件: my_Remot_rule_REJECT.list
+# 来源: src/my_rule.list
+# Generated at 2026-01-20T14:40:18.256422 UTC
+# 无注释规则，直接使用
+DOMAIN,download.parallels.com,REJECT
+DOMAIN,download.parallels.com.cdn.cloudflare.net,REJECT
+DOMAIN,update.parallels.com,REJECT
+DOMAIN,update.parallels.com.cdn.cloudflare.net,REJECT
+DOMAIN,desktop.parallels.com,REJECT
+DOMAIN,desktop.parallels.com.cdn.cloudflare.net,REJECT
+DOMAIN,www.parallels.cn,REJECT
+DOMAIN,www.parallels.com,REJECT
+DOMAIN,www.parallels.de,REJECT
+DOMAIN,www.parallels.es,REJECT
+DOMAIN,www.parallels.fr,REJECT
+DOMAIN,www.parallels.nl,REJECT
+DOMAIN,www.parallels.pt,REJECT
+DOMAIN,www.parallels.ru,REJECT
+DOMAIN,www.parallelskorea.com,REJECT
+DOMAIN,parallels.cn,REJECT
+DOMAIN,parallels.com,REJECT
+DOMAIN,parallels.de,REJECT
+DOMAIN,parallels.es,REJECT
+DOMAIN,parallels.fr,REJECT
+DOMAIN,parallels.nl,REJECT
+DOMAIN,parallels.pt,REJECT
+DOMAIN,parallels.ru,REJECT
+DOMAIN,parallelskorea.com,REJECT
+DOMAIN,pax-manager.myparallels.com,REJECT
+DOMAIN,myparallels.com,REJECT
+DOMAIN,my.parallels.com,REJECT
+DOMAIN,reportus.parallels.com,REJECT
+DOMAIN,jvod.300hu.com,REJECT
+DOMAIN-SUFFIX,300hu.com,REJECT

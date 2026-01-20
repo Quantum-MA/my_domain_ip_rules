@@ -1,0 +1,22 @@
+# 自动生成文件: my_Remot_rule_PROXY.list
+# 来源: src/my_rule.list
+# Generated at 2026-01-20T14:40:18.256536 UTC
+# 无注释规则，直接使用
+DOMAIN-SUFFIX,qichiyu.com,默认代理
+DOMAIN-KEYWORD,kelee,默认代理
+DOMAIN-KEYWORD,yfamilys,默认代理
+DOMAIN-SUFFIX,bitwarden.com,默认代理
+DOMAIN-SUFFIX,bitwarden.eu,默认代理
+DOMAIN-SUFFIX,bitwarden.net,默认代理
+DOMAIN-SUFFIX,btwrdn.co,默认代理
+DOMAIN-SUFFIX,btwrdn.com,默认代理
+IP-CIDR,42.186.193.9/32,DIRECT,no-resolve
+IP-CIDR,23.50.108.7/32,DIRECT,no-resolve
+IP-CIDR,35.190.85.165/32,DIRECT,no-resolve
+IP-CIDR,42.186.0.0/17,DIRECT,no-resolve
+IP-CIDR,59.111.64.0/19,DIRECT,no-resolve
+IP-CIDR,45.253.160.0/20,DIRECT,no-resolve
+IP-CIDR,45.253.176.0/20,DIRECT,no-resolve
+IP-CIDR,45.195.16.0/21,DIRECT,no-resolve
+IP-CIDR,103.101.221.0/24,DIRECT,no-resolve
+IP-CIDR,103.131.252.0/22,DIRECT,no-resolve
