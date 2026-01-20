@@ -15,7 +15,7 @@ for line in SRC_FILE.read_text(encoding="utf-8").splitlines():
     output.append(s)
 
 header = [
-    f"# This file is auto-generated from src/my_class.list",
+    f"# 这是由 src/my_class.list自动生成的无注释list",
     f"# Generated at {datetime.utcnow().isoformat()} UTC",
     "# Do not edit manually; edit src/my_class.list instead"
 ]
