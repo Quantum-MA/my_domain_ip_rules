@@ -15,16 +15,16 @@ for line in SRC_FILE.read_text(encoding="utf-8").splitlines():
     s = line.strip()
     if not s or s.startswith("#") or s.startswith(";"):
         continue
-    ## 分割成字段
+
     parts = s.split(",")
-    if len(parts) < 2:
-        continue
-    # 倒数第一个是策略字段（DIRECT/REJECT/默认代理）
-    policy_field = parts[-2].strip().upper()
-    if policy_field in ["DIRECT", "REJECT"]:
-        policy_upper = policy_field
+    # 如果至少有三列，则第三列是策略
+    if len(parts) >= 3:
+        policy_upper = parts[2].strip().upper()
+        if policy_upper not in ["DIRECT", "REJECT"]:
+            policy_upper = "PROXY"
     else:
         policy_upper = "PROXY"
+
     output[policy_upper].append(s)
 
 # 写入三个文件
