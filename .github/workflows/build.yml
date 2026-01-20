@@ -12,20 +12,35 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ 检出仓库
       - uses: actions/checkout@v4
 
+      # 2️⃣ 安装 Python
       - uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - name: Build my_class.list
+      # 3️⃣ 执行生成脚本
+      - name: Build Remot_class
         run: |
           python scripts/build.py
 
+      # 4️⃣ 提交并 push
       - name: Commit and push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add my_class.list
-          git diff --cached --quiet || git commit -m "auto: rebuild my_class.list"
-          git push
+
+          # 添加生成的订阅文件
+          git add Remot_class
+
+          # 如果有改动就 commit
+          git diff --cached --quiet || git commit -m "auto: rebuild Remot_class"
+
+          # 先 pull 避免 fast-forward 错误
+          git pull --rebase origin main
+
+          # push 回远程
+          git push origin main
