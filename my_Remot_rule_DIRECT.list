@@ -1,7 +1,8 @@
 # 自动生成文件: my_Remot_rule_DIRECT.list
 # 来源: src/my_rule.list
-# Generated at 2026-01-20T15:22:28.326218 UTC
+# Generated at 2026-01-20T15:22:59.087771 UTC
 # 无注释规则，直接使用
+SRC-IP-CIDR,192.168.1.201/32,DIRECT
 DOMAIN-SUFFIX,netease.com,DIRECT
 DOMAIN-KEYWORD,netease,DIRECT
 DOMAIN-SUFFIX,163.com,DIRECT
