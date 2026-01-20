@@ -21,7 +21,7 @@ jobs:
           python-version: "3.x"
 
       # 3️⃣ 执行生成脚本
-      - name: Build Remot_class.list
+      - name: Build Remot_class lists
         run: |
           python scripts/build.py
 
@@ -33,14 +33,11 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          # 添加生成的订阅文件
-          git add Remot_class.list
+          git add my_Remot_rule_DIRECT.list
+          git add my_Remot_rule_REJECT.list
+          git add my_Remot_rule_PROXY.list
 
-          # 如果有改动就 commit
-          git diff --cached --quiet || git commit -m "auto: rebuild Remot_class"
+          git diff --cached --quiet || git commit -m "auto: rebuild my_Remot_rule lists"
 
-          # 先 pull 避免 fast-forward 错误
           git pull --rebase origin main
-
-          # push 回远程
           git push origin main
