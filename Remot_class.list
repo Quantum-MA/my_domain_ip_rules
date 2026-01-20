@@ -1,7 +1,6 @@
 # This file is auto-generated from src/my_class.list
-# Generated at 2026-01-20T13:09:13.195449 UTC
+# Generated at 2026-01-20T13:10:32.367066 UTC
 # Do not edit manually; edit src/my_class.list instead
-
 DOMAIN-SUFFIX,netease.com,DIRECT
 DOMAIN-KEYWORD,netease,DIRECT
 DOMAIN-SUFFIX,163.com,DIRECT
