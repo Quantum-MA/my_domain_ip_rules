@@ -1,7 +1,7 @@
 from pathlib import Path
 
-SRC_FILE = Path("my_class")
-DST_FILE = Path("Remot_class")
+SRC_FILE = Path("my_class.list")
+DST_FILE = Path("Remot_class.list")
 
 output = []
 
