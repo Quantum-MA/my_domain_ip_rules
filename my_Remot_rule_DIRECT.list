@@ -1,6 +1,6 @@
 # 自动生成文件: my_Remot_rule_DIRECT.list
 # 来源: src/my_rule.list
-# Generated at 2026-01-20T14:43:57.679952 UTC
+# Generated at 2026-01-20T14:54:50.935224 UTC
 # 无注释规则，直接使用
 DOMAIN-SUFFIX,netease.com,DIRECT
 DOMAIN-KEYWORD,netease,DIRECT
