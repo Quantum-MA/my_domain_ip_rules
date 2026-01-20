@@ -25,7 +25,7 @@ jobs:
         run: |
           python scripts/build.py
 
-      # 4️⃣ 提交并 push（强制覆盖远程）
+      # 4️⃣ 提交并强制 push
       - name: Commit and push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -33,13 +33,13 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
-          # 添加生成的三份订阅文件
+          # 添加三份生成文件
           git add my_Remot_rule_DIRECT.list
           git add my_Remot_rule_REJECT.list
           git add my_Remot_rule_PROXY.list
 
-          # commit 如果没有改动不会报错
+          # commit，如果没有改动不会报错
           git commit -m "auto: rebuild my_Remot_rule lists" || echo "No changes to commit"
 
-          # 强制 push 回远程，避免 rebase 冲突
+          # 强制 push，覆盖远程，避免 rebase 冲突
           git push origin main --force
