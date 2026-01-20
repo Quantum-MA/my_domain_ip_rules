@@ -1,5 +1,5 @@
-# This file is auto-generated from src/my_class.list
-# Generated at 2026-01-20T13:10:32.367066 UTC
+# 这是由 src/my_class.list自动生成的无注释list
+# Generated at 2026-01-20T13:12:50.126617 UTC
 # Do not edit manually; edit src/my_class.list instead
 DOMAIN-SUFFIX,netease.com,DIRECT
 DOMAIN-KEYWORD,netease,DIRECT
