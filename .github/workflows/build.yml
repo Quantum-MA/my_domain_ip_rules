@@ -21,7 +21,7 @@ jobs:
           python-version: "3.x"
 
       # 3️⃣ 执行生成脚本
-      - name: Build Remot_class
+      - name: Build Remot_class.list
         run: |
           python scripts/build.py
 
@@ -34,7 +34,7 @@ jobs:
           git config user.email "github-actions@github.com"
 
           # 添加生成的订阅文件
-          git add Remot_class
+          git add Remot_class.list
 
           # 如果有改动就 commit
           git diff --cached --quiet || git commit -m "auto: rebuild Remot_class"
