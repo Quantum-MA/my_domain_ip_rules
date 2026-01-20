@@ -1,1 +1,57 @@
+# This file is auto-generated from src/my_class.list
+# Generated at 2026-01-20T13:09:13.195449 UTC
+# Do not edit manually; edit src/my_class.list instead
 
+DOMAIN-SUFFIX,netease.com,DIRECT
+DOMAIN-KEYWORD,netease,DIRECT
+DOMAIN-SUFFIX,163.com,DIRECT
+DOMAIN-SUFFIX,game.163.com,DIRECT
+DOMAIN-SUFFIX,ym.163.com,DIRECT
+DOMAIN,download.parallels.com,REJECT
+DOMAIN,download.parallels.com.cdn.cloudflare.net,REJECT
+DOMAIN,update.parallels.com,REJECT
+DOMAIN,update.parallels.com.cdn.cloudflare.net,REJECT
+DOMAIN,desktop.parallels.com,REJECT
+DOMAIN,desktop.parallels.com.cdn.cloudflare.net,REJECT
+DOMAIN,www.parallels.cn,REJECT
+DOMAIN,www.parallels.com,REJECT
+DOMAIN,www.parallels.de,REJECT
+DOMAIN,www.parallels.es,REJECT
+DOMAIN,www.parallels.fr,REJECT
+DOMAIN,www.parallels.nl,REJECT
+DOMAIN,www.parallels.pt,REJECT
+DOMAIN,www.parallels.ru,REJECT
+DOMAIN,www.parallelskorea.com,REJECT
+DOMAIN,parallels.cn,REJECT
+DOMAIN,parallels.com,REJECT
+DOMAIN,parallels.de,REJECT
+DOMAIN,parallels.es,REJECT
+DOMAIN,parallels.fr,REJECT
+DOMAIN,parallels.nl,REJECT
+DOMAIN,parallels.pt,REJECT
+DOMAIN,parallels.ru,REJECT
+DOMAIN,parallelskorea.com,REJECT
+DOMAIN,pax-manager.myparallels.com,REJECT
+DOMAIN,myparallels.com,REJECT
+DOMAIN,my.parallels.com,REJECT
+DOMAIN,reportus.parallels.com,REJECT
+DOMAIN,jvod.300hu.com,REJECT
+DOMAIN-SUFFIX,300hu.com,REJECT
+DOMAIN-SUFFIX,qichiyu.com,默认代理
+DOMAIN-KEYWORD,kelee,默认代理
+DOMAIN-KEYWORD,yfamilys,默认代理
+DOMAIN-SUFFIX,bitwarden.com,默认代理
+DOMAIN-SUFFIX,bitwarden.eu,默认代理
+DOMAIN-SUFFIX,bitwarden.net,默认代理
+DOMAIN-SUFFIX,btwrdn.co,默认代理
+DOMAIN-SUFFIX,btwrdn.com,默认代理
+IP-CIDR,42.186.193.9/32,DIRECT,no-resolve
+IP-CIDR,23.50.108.7/32,DIRECT,no-resolve
+IP-CIDR,35.190.85.165/32,DIRECT,no-resolve
+IP-CIDR,42.186.0.0/17,DIRECT,no-resolve
+IP-CIDR,59.111.64.0/19,DIRECT,no-resolve
+IP-CIDR,45.253.160.0/20,DIRECT,no-resolve
+IP-CIDR,45.253.176.0/20,DIRECT,no-resolve
+IP-CIDR,45.195.16.0/21,DIRECT,no-resolve
+IP-CIDR,103.101.221.0/24,DIRECT,no-resolve
+IP-CIDR,103.131.252.0/22,DIRECT,no-resolve
