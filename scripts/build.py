@@ -3,38 +3,31 @@ from datetime import datetime
 
 SRC_FILE = Path("src/my_class.list")
 
-# 输出文件
 DST_FILES = {
     "DIRECT": Path("my_Remot_rule_DIRECT.list"),
     "REJECT": Path("my_Remot_rule_REJECT.list"),
     "PROXY": Path("my_Remot_rule_PROXY.list")
 }
 
-# 初始化存放规则的列表
-output = {
-    "DIRECT": [],
-    "REJECT": [],
-    "PROXY": []
-}
+output = {k: [] for k in DST_FILES}
 
-# 读取源文件并分组
 for line in SRC_FILE.read_text(encoding="utf-8").splitlines():
     s = line.strip()
-    if not s:
+    if not s or s.startswith("#") or s.startswith(";"):
         continue
-    if s.startswith("#") or s.startswith(";"):
+    # 分割成字段
+    parts = s.split(",")
+    if len(parts) < 2:
         continue
-    # 取最后一段逗号分割的策略字段
-    parts = s.rsplit(",", 1)
-    if len(parts) != 2:
-        continue
-    rule, policy = parts
-    policy_upper = policy.strip().upper()
-    if policy_upper not in output:
-        policy_upper = "PROXY"  # 默认策略归为 PROXY
+    # 倒数第一个是策略字段（DIRECT/REJECT/默认代理）
+    policy_field = parts[-1].strip().upper()
+    if policy_field in ["DIRECT", "REJECT"]:
+        policy_upper = policy_field
+    else:
+        policy_upper = "PROXY"
     output[policy_upper].append(s)
 
-# 添加文件头并写入
+# 写入三个文件
 for policy, dst_file in DST_FILES.items():
     header = [
         f"# 自动生成文件: {dst_file.name}",
