@@ -1,7 +1,8 @@
 # 自动生成文件: my_Remot_rule_DIRECT.list
 # 来源: src/my_rule.list
-# Generated at 2026-01-20T15:22:59.087771 UTC
+# Generated at 2026-01-20T15:30:21.449505 UTC
 # 无注释规则，直接使用
+DOMAIN,阿宝纯纯粹粹ABC的风景那就从南京唔你就像那唔姐姐,DIRECT
 SRC-IP-CIDR,192.168.1.201/32,DIRECT
 DOMAIN-SUFFIX,netease.com,DIRECT
 DOMAIN-KEYWORD,netease,DIRECT
