@@ -14,3 +14,131 @@
 ##- SRC-PORT,7777,DIRECT #匹配数据源端口(直连)
 ##- GEOSITE,category-public-tracker,DIRECT #匹配GEOSITE数据库规则(直连)
 ##- DOMAIN-REGEX,^abc.*com,PROXY #正则匹配域名
+
+
+
+# ============================Local_Rules================================
+
+
+
+
+##———————————————————————Local_Domain_Rules————————————————————
+
+
+
+###---------Local_Domain_Rules_Direct-----------
+
+
+####网易游戏
+
+- DOMAIN-SUFFIX,netease.com,DIRECT
+- DOMAIN-KEYWORD,netease,DIRECT
+- DOMAIN-SUFFIX,163.com,DIRECT
+- DOMAIN-SUFFIX,game.163.com,DIRECT
+- DOMAIN-SUFFIX,ym.163.com,DIRECT
+
+
+###---------Local_Domain_Rules_REJECT-----------
+
+
+#### Block Parallels Desktop
+
+- DOMAIN,download.parallels.com,REJECT
+- DOMAIN,download.parallels.com.cdn.cloudflare.net,REJECT
+- DOMAIN,update.parallels.com,REJECT
+- DOMAIN,update.parallels.com.cdn.cloudflare.net,REJECT
+- DOMAIN,desktop.parallels.com,REJECT
+- DOMAIN,desktop.parallels.com.cdn.cloudflare.net,REJECT
+- DOMAIN,www.parallels.cn,REJECT
+- DOMAIN,www.parallels.com,REJECT
+- DOMAIN,www.parallels.de,REJECT
+- DOMAIN,www.parallels.es,REJECT
+- DOMAIN,www.parallels.fr,REJECT
+- DOMAIN,www.parallels.nl,REJECT
+- DOMAIN,www.parallels.pt,REJECT
+- DOMAIN,www.parallels.ru,REJECT
+- DOMAIN,www.parallelskorea.com,REJECT
+- DOMAIN,parallels.cn,REJECT
+- DOMAIN,parallels.com,REJECT
+- DOMAIN,parallels.de,REJECT
+- DOMAIN,parallels.es,REJECT
+- DOMAIN,parallels.fr,REJECT
+- DOMAIN,parallels.nl,REJECT
+- DOMAIN,parallels.pt,REJECT
+- DOMAIN,parallels.ru,REJECT
+- DOMAIN,parallelskorea.com,REJECT
+- DOMAIN,pax-manager.myparallels.com,REJECT
+- DOMAIN,myparallels.com,REJECT
+- DOMAIN,my.parallels.com,REJECT
+- DOMAIN,reportus.parallels.com,REJECT
+
+####Block Apple Software Update
+
+# - DOMAIN-SUFFIX,swdist.apple.com,REJECT
+# - DOMAIN-SUFFIX,swscan.apple.com,REJECT
+# - DOMAIN-SUFFIX,swcdn.apple.com,REJECT
+# - DOMAIN-SUFFIX,gdmf.apple.com,REJECT
+# - DOMAIN-SUFFIX,mesu.apple.com,REJECT
+# - DOMAIN-SUFFIX,xp.apple.com,REJECT
+# - DOMAIN-SUFFIX,updates.cdn-apple.com,REJECT
+
+# 屏蔽 jvod 视频域（较温和，不易导致页面崩溃）
+- DOMAIN,jvod.300hu.com,REJECT
+# 备用：如果上面不生效，可扩大到整个二级域名
+- DOMAIN-SUFFIX,300hu.com,REJECT
+# # 更严格：只拦截 mp4/m3u8/ts 等媒体后缀（避免误杀其它 API）
+# URL-REGEX,"^https?:\/\/jvod\.300hu\.com(:443)?\/.*\.(mp4|m3u8|ts|m4s|flv)(\?.*)?$",REJECT
+
+
+
+###---------Local_Domain_Rules_Proxy------------
+
+
+- DOMAIN-SUFFIX,qichiyu.com,默认代理
+
+####loon插件库
+
+- DOMAIN-KEYWORD,kelee,默认代理
+- DOMAIN-KEYWORD,yfamilys,默认代理
+
+####bitwarden
+- DOMAIN-SUFFIX,bitwarden.com,默认代理
+- DOMAIN-SUFFIX,bitwarden.eu,默认代理
+- DOMAIN-SUFFIX,bitwarden.net,默认代理
+- DOMAIN-SUFFIX,btwrdn.co,默认代理
+- DOMAIN-SUFFIX,btwrdn.com,默认代理
+
+
+
+
+##———————————————————————Local_IP_Rules————————————————————
+
+
+###---------Local_IP_Rules_Direct-----------
+
+####网易游戏
+
+##### 明确观测到的单个 IP
+- IP-CIDR,42.186.193.9/32,DIRECT,no-resolve     
+- IP-CIDR,23.50.108.7/32,DIRECT,no-resolve     
+- IP-CIDR,35.190.85.165/32,DIRECT,no-resolve    
+##### 推测性但普遍属于网易网络的较大 IP 网段（常用于游戏等服务）
+- IP-CIDR,42.186.0.0/17,DIRECT,no-resolve       
+- IP-CIDR,59.111.64.0/19,DIRECT,no-resolve      
+- IP-CIDR,45.253.160.0/20,DIRECT,no-resolve     
+- IP-CIDR,45.253.176.0/20,DIRECT,no-resolve     
+##### 香港网易娱乐网段（部分可能用于海外/加速节点）
+- IP-CIDR,45.195.16.0/21,DIRECT,no-resolve      
+- IP-CIDR,103.101.221.0/24,DIRECT,no-resolve    
+##### 台湾网易相关网段
+- IP-CIDR,103.131.252.0/22,DIRECT,no-resolve 
+
+
+###---------Local_IP_Rules_REJECT-----------
+
+
+###---------Local_IP_Rules_Proxy------------
+
+
+
+
