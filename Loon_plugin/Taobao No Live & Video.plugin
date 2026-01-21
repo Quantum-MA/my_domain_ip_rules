@@ -1,0 +1,35 @@
+#!name=Taobao No Live & Video (Inline)
+#!desc=通过 MTOP Rewrite 去除淘宝直播入口/推荐，并屏蔽视频播放（脚本内联）
+#!author=custom
+#!category=App
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taobao.png
+
+[Rewrite]
+# === 直播控制源头（最关键）===
+^https:\/\/.*\/mtop\.uncenter\.livex-show.*$ url script-response-body tb_livex_kill
+
+# （可选兜底）部分直播相关 mtop 配置
+^https:\/\/(acs|guide-acs)\.m\.taobao\.com\/gw\/mtop\.taobao\..*live.*$ url script-response-body tb_livex_kill
+
+
+[Rule]
+# === 视频播放 CDN（短视频 / 直播兜底）===
+DOMAIN-SUFFIX,cloudvideocdn.taobao.com,REJECT
+DOMAIN-SUFFIX,livevideocdn.taobao.com,REJECT
+
+
+[Script]
+tb_livex_kill = type=http-response,pattern=^https:\/\/.*\/mtop\.uncenter\.livex-show.*,script-code="
+/*
+ * Taobao Live Disable (Inline)
+ * 命中接口：mtop.uncenter.livex-show
+ * 作用：让淘宝认为『当前没有任何直播内容』
+ */
+
+let fake = {
+  ret: [\"SUCCESS::NO_LIVE\"],
+  data: {}
+};
+
+$done({ body: JSON.stringify(fake) });
+"
