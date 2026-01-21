@@ -1,6 +1,6 @@
 # 自动生成文件: my_Remot_rule_PROXY.list
 # 来源: src/my_rule.list
-# Generated at 2026-01-20T15:30:21.449814 UTC
+# Generated at 2026-01-21T01:17:45.721034 UTC
 # 无注释规则，直接使用
 DOMAIN-SUFFIX,qichiyu.com,默认代理
 DOMAIN-KEYWORD,yfamilys,默认代理
