@@ -21,6 +21,9 @@
 ###---------Local_Domain_Rules_Direct-----------
 
 
+DOMAIN-KEYWORD,kelee,DIRECT
+
+
 
 ####匹配数据发起IP(直连)
 SRC-IP-CIDR,192.168.1.201/32,DIRECT
@@ -103,12 +106,15 @@ DOMAIN-SUFFIX,300hu.com,REJECT
 
 ###---------Local_Domain_Rules_Proxy------------
 
+####Start me
+
+DOMAIN-SUFFIX,start.me,默认代理
 
 DOMAIN-SUFFIX,qichiyu.com,默认代理
 
 ####loon插件库
 
-DOMAIN-KEYWORD,kelee,DIRECT
+
 DOMAIN-KEYWORD,yfamilys,默认代理
 
 
