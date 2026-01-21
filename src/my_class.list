@@ -36,6 +36,19 @@ DOMAIN-SUFFIX,ym.163.com,DIRECT
 
 ###---------Local_Domain_Rules_REJECT-----------
 
+# 淘宝直播接口 & 流媒体
+DOMAIN,live-spare.alicdn.com,REJECT
+DOMAIN-SUFFIX,cloudvideocdn.taobao.com,REJECT
+DOMAIN-SUFFIX,live.taobao.com,REJECT
+DOMAIN-SUFFIX,h5.m.taobao.com,REJECT
+DOMAIN-KEYWORD,taobao/live,REJECT
+# 淘宝直播接口（移动端）
+URL-REGEX,"acs\.m\.taobao\.com/.*/live",REJECT
+URL-REGEX,"acs\.m\.taobao\.com/.*/stream",REJECT
+# URL 精准屏蔽直播路径
+URL-REGEX,"/live/.*/play",REJECT
+URL-REGEX,"/live/.*/stream",REJECT
+
 
 
 #### Block Parallels Desktop
