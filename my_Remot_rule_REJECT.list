@@ -1,6 +1,6 @@
 # 自动生成文件: my_Remot_rule_REJECT.list
 # 来源: src/my_rule.list
-# Generated at 2026-01-21T03:02:20.929507 UTC
+# Generated at 2026-01-21T05:58:44.888815 UTC
 # 无注释规则，直接使用
 DOMAIN,live-spare.alicdn.com,REJECT
 DOMAIN-SUFFIX,cloudvideocdn.taobao.com,REJECT
