@@ -20,7 +20,7 @@
 ##———————————————————————Local_Domain_Rules————————————————————
 ###---------Local_Domain_Rules_Direct-----------
 
-DOMAIN,阿宝纯纯粹粹ABC的风景那就从南京唔你就像那唔姐姐,DIRECT
+
 
 ####匹配数据发起IP(直连)
 SRC-IP-CIDR,192.168.1.201/32,DIRECT
