@@ -20,10 +20,10 @@
 ##———————————————————————Local_Domain_Rules————————————————————
 ###---------Local_Domain_Rules_Direct-----------
 
-
 DOMAIN-KEYWORD,kelee,DIRECT
-
 DOMAIN-SUFFIX,webvpn.ccu.edu.cn,DIRECT
+DOMAIN-SUFFIX,cnki.net,DIRECT
+
 
 ####匹配数据发起IP(直连)
 SRC-IP-CIDR,192.168.1.201/32,DIRECT
