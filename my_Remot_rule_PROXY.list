@@ -1,7 +1,8 @@
 # 自动生成文件: my_Remot_rule_PROXY.list
 # 来源: src/my_rule.list
-# Generated at 2026-01-23T16:24:19.433539 UTC
+# Generated at 2026-01-24T03:28:38.012450 UTC
 # 无注释规则，直接使用
+DOMAIN-SUFFIX,macked.app,默认代理
 DOMAIN-SUFFIX,start.me,默认代理
 DOMAIN-SUFFIX,qichiyu.com,默认代理
 DOMAIN-KEYWORD,yfamilys,默认代理
