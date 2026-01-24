@@ -106,6 +106,8 @@ DOMAIN-SUFFIX,300hu.com,REJECT
 
 ###---------Local_Domain_Rules_Proxy------------
 
+DOMAIN-SUFFIX,macked.app,默认代理
+
 ####Start me
 
 DOMAIN-SUFFIX,start.me,默认代理
