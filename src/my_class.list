@@ -41,17 +41,17 @@ DOMAIN-SUFFIX,ym.163.com,DIRECT
 ###---------Local_Domain_Rules_REJECT-----------
 
 # 淘宝直播接口 & 流媒体
-DOMAIN,live-spare.alicdn.com,REJECT
-DOMAIN-SUFFIX,cloudvideocdn.taobao.com,REJECT
-DOMAIN-SUFFIX,live.taobao.com,REJECT
-DOMAIN-SUFFIX,h5.m.taobao.com,REJECT
-DOMAIN-KEYWORD,taobao/live,REJECT
+#DOMAIN,live-spare.alicdn.com,REJECT
+#DOMAIN-SUFFIX,cloudvideocdn.taobao.com,REJECT
+#DOMAIN-SUFFIX,live.taobao.com,REJECT
+#DOMAIN-SUFFIX,h5.m.taobao.com,REJECT
+#DOMAIN-KEYWORD,taobao/live,REJECT
 # 淘宝直播接口（移动端）
-URL-REGEX,"acs\.m\.taobao\.com/.*/live",REJECT
-URL-REGEX,"acs\.m\.taobao\.com/.*/stream",REJECT
+#URL-REGEX,"acs\.m\.taobao\.com/.*/live",REJECT
+#URL-REGEX,"acs\.m\.taobao\.com/.*/stream",REJECT
 # URL 精准屏蔽直播路径
-URL-REGEX,"/live/.*/play",REJECT
-URL-REGEX,"/live/.*/stream",REJECT
+#URL-REGEX,"/live/.*/play",REJECT
+#URL-REGEX,"/live/.*/stream",REJECT
 
 
 
@@ -97,9 +97,9 @@ DOMAIN,reportus.parallels.com,REJECT
 # - DOMAIN-SUFFIX,updates.cdn-apple.com,REJECT
 
 # 屏蔽 jvod 视频域（较温和，不易导致页面崩溃）
-DOMAIN,jvod.300hu.com,REJECT
+#DOMAIN,jvod.300hu.com,REJECT
 # 备用：如果上面不生效，可扩大到整个二级域名
-DOMAIN-SUFFIX,300hu.com,REJECT
+#DOMAIN-SUFFIX,300hu.com,REJECT
 # # 更严格：只拦截 mp4/m3u8/ts 等媒体后缀（避免误杀其它 API）
 # URL-REGEX,"^https?:\/\/jvod\.300hu\.com(:443)?\/.*\.(mp4|m3u8|ts|m4s|flv)(\?.*)?$",REJECT
 
