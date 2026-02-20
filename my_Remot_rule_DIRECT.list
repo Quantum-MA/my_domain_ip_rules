@@ -1,6 +1,6 @@
 # 自动生成文件: my_Remot_rule_DIRECT.list
 # 来源: src/my_rule.list
-# Generated at 2026-02-10T14:49:22.412317 UTC
+# Generated at 2026-02-20T05:22:28.277290 UTC
 # 无注释规则，直接使用
 DOMAIN-KEYWORD,kelee,DIRECT
 DOMAIN-SUFFIX,webvpn.ccu.edu.cn,DIRECT

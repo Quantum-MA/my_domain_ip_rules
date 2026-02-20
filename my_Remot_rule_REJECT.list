@@ -1,16 +1,7 @@
 # 自动生成文件: my_Remot_rule_REJECT.list
 # 来源: src/my_rule.list
-# Generated at 2026-02-10T14:49:22.412498 UTC
+# Generated at 2026-02-20T05:22:28.277495 UTC
 # 无注释规则，直接使用
-DOMAIN,live-spare.alicdn.com,REJECT
-DOMAIN-SUFFIX,cloudvideocdn.taobao.com,REJECT
-DOMAIN-SUFFIX,live.taobao.com,REJECT
-DOMAIN-SUFFIX,h5.m.taobao.com,REJECT
-DOMAIN-KEYWORD,taobao/live,REJECT
-URL-REGEX,"acs\.m\.taobao\.com/.*/live",REJECT
-URL-REGEX,"acs\.m\.taobao\.com/.*/stream",REJECT
-URL-REGEX,"/live/.*/play",REJECT
-URL-REGEX,"/live/.*/stream",REJECT
 DOMAIN,download.parallels.com,REJECT
 DOMAIN,download.parallels.com.cdn.cloudflare.net,REJECT
 DOMAIN,update.parallels.com,REJECT
@@ -39,5 +30,3 @@ DOMAIN,pax-manager.myparallels.com,REJECT
 DOMAIN,myparallels.com,REJECT
 DOMAIN,my.parallels.com,REJECT
 DOMAIN,reportus.parallels.com,REJECT
-DOMAIN,jvod.300hu.com,REJECT
-DOMAIN-SUFFIX,300hu.com,REJECT
