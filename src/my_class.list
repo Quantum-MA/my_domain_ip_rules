@@ -1,4 +1,4 @@
-##DOMAIN-SUFFIX,example.com,REJECT
+#DOMAIN-SUFFIX,example.com,REJECT
 #DOMAIN,api.example.com,DIRECT
 #DOMAIN-KEYWORD,ads,REJECT
 #IP-CIDR,1.2.3.0/24,REJECT
@@ -97,9 +97,9 @@ DOMAIN,reportus.parallels.com,REJECT
 # - DOMAIN-SUFFIX,updates.cdn-apple.com,REJECT
 
 # 屏蔽 jvod 视频域（较温和，不易导致页面崩溃）
-#DOMAIN,jvod.300hu.com,REJECT
+DOMAIN,jvod.300hu.com,REJECT
 # 备用：如果上面不生效，可扩大到整个二级域名
-#DOMAIN-SUFFIX,300hu.com,REJECT
+DOMAIN-SUFFIX,300hu.com,REJECT
 # # 更严格：只拦截 mp4/m3u8/ts 等媒体后缀（避免误杀其它 API）
 # URL-REGEX,"^https?:\/\/jvod\.300hu\.com(:443)?\/.*\.(mp4|m3u8|ts|m4s|flv)(\?.*)?$",REJECT
 
