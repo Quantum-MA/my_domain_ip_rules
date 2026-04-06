@@ -30,8 +30,11 @@ DOMAIN-SUFFIX,fanyu.com,DIRECT
 DOMAIN-SUFFIX,day.app,DIRECT
 DOMAIN-KEYWORD,zotero,DIRECT
 
+
 ####匹配数据发起IP(直连)
 SRC-IP-CIDR,192.168.28.111,DIRECT
+
+
 
 ####网易游戏
 
@@ -140,6 +143,8 @@ DOMAIN-SUFFIX,btwrdn.com,默认代理
 
 ###---------Local_IP_Rules_Direct-----------
 
+
+IP-CIDR,8.210.224.97,DIRECT,no-resolve 
 ####网易游戏
 
 ##### 明确观测到的单个 IP
