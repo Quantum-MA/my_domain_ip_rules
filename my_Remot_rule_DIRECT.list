@@ -1,6 +1,6 @@
 # 自动生成文件: my_Remot_rule_DIRECT.list
 # 来源: src/my_rule.list
-# Generated at 2026-04-06T15:28:04.252987 UTC
+# Generated at 2026-04-06T15:29:11.982736 UTC
 # 无注释规则，直接使用
 DOMAIN-KEYWORD,kelee,DIRECT
 DOMAIN-SUFFIX,webvpn.ccu.edu.cn,DIRECT
@@ -10,6 +10,7 @@ DOMAIN-KEYWORD,fanyu,DIRECT
 DOMAIN-SUFFIX,fanyu.com,DIRECT
 DOMAIN-SUFFIX,day.app,DIRECT
 DOMAIN-KEYWORD,zotero,DIRECT
+DOMAIN-KEYWORD,aliyun.com,DIRECT
 SRC-IP-CIDR,192.168.28.111,DIRECT
 DOMAIN-SUFFIX,netease.com,DIRECT
 DOMAIN-KEYWORD,netease,DIRECT
