@@ -32,7 +32,7 @@ DOMAIN-KEYWORD,zotero,DIRECT
 DOMAIN-KEYWORD,aliyun.com,DIRECT
 
 ####匹配数据发起IP(直连)
-SRC-IP-CIDR,192.168.28.111,DIRECT
+SRC-IP-CIDR,192.168.28.111/32,DIRECT
 
 
 
@@ -117,17 +117,11 @@ DOMAIN-SUFFIX,300hu.com,REJECT
 DOMAIN-SUFFIX,macked.app,默认代理
 
 ####Start me
-
 DOMAIN-SUFFIX,start.me,默认代理
-
 DOMAIN-SUFFIX,qichiyu.com,默认代理
 
 ####loon插件库
-
-
 DOMAIN-KEYWORD,yfamilys,默认代理
-
-
 ####bitwarden
 DOMAIN-SUFFIX,bitwarden.com,默认代理
 DOMAIN-SUFFIX,bitwarden.eu,默认代理
@@ -148,13 +142,10 @@ IP-CIDR,8.210.224.97,DIRECT,no-resolve
 ####网易游戏
 
 ##### 明确观测到的单个 IP
-IP-CIDR,112.90.80.67,DIRECT,no-resolve 
-IP-CIDR,183.60.15.40,DIRECT,no-resolve 
-IP-CIDR,157.255.218.77,DIRECT,no-resolve 
-IP-CIDR,183.60.15.48,DIRECT,no-resolve 
-
-
-
+IP-CIDR,112.90.80.67/32,DIRECT,no-resolve 
+IP-CIDR,183.60.15.40/32,DIRECT,no-resolve 
+IP-CIDR,157.255.218.77/32,DIRECT,no-resolve 
+IP-CIDR,183.60.15.48/32,DIRECT,no-resolve 
 IP-CIDR,42.186.193.9/32,DIRECT,no-resolve     
 IP-CIDR,23.50.108.7/32,DIRECT,no-resolve     
 IP-CIDR,35.190.85.165/32,DIRECT,no-resolve    
