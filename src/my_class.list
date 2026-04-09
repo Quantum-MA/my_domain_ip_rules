@@ -138,7 +138,8 @@ DOMAIN-SUFFIX,btwrdn.com,默认代理
 ###---------Local_IP_Rules_Direct-----------
 
 
-IP-CIDR,8.210.224.97,DIRECT,no-resolve 
+IP-CIDR,8.210.224.97/32,DIRECT,no-resolve 
+IP-CIDR,47.239.23.136/32,DIRECT,no-resolve 
 ####网易游戏
 
 ##### 明确观测到的单个 IP
