@@ -1,6 +1,6 @@
 # 自动生成文件: my_Remot_rule_DIRECT.list
 # 来源: src/my_rule.list
-# Generated at 2026-04-08T14:40:15.118123 UTC
+# Generated at 2026-04-09T08:37:15.145421 UTC
 # 无注释规则，直接使用
 DOMAIN-KEYWORD,kelee,DIRECT
 DOMAIN-SUFFIX,webvpn.ccu.edu.cn,DIRECT
@@ -17,7 +17,8 @@ DOMAIN-KEYWORD,netease,DIRECT
 DOMAIN-SUFFIX,163.com,DIRECT
 DOMAIN-SUFFIX,game.163.com,DIRECT
 DOMAIN-SUFFIX,ym.163.com,DIRECT
-IP-CIDR,8.210.224.97,DIRECT,no-resolve
+IP-CIDR,8.210.224.97/32,DIRECT,no-resolve
+IP-CIDR,47.239.23.136/32,DIRECT,no-resolve
 IP-CIDR,112.90.80.67/32,DIRECT,no-resolve
 IP-CIDR,183.60.15.40/32,DIRECT,no-resolve
 IP-CIDR,157.255.218.77/32,DIRECT,no-resolve
