@@ -1,6 +1,6 @@
 # 自动生成文件: my_Remot_rule_REJECT.list
 # 来源: src/my_rule.list
-# Generated at 2026-05-12T06:12:55.425720 UTC
+# Generated at 2026-05-12T08:38:25.270973 UTC
 # 无注释规则，直接使用
 DOMAIN,download.parallels.com,REJECT
 DOMAIN,download.parallels.com.cdn.cloudflare.net,REJECT
