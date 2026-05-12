@@ -21,6 +21,8 @@
 ###---------Local_Domain_Rules_Direct-----------
 
 DOMAIN-KEYWORD,ccu.lun51.com,DIRECT
+DOMAIN-KEYWORD,cnki.cnkipaper,DIRECT
+DOMAIN-KEYWORD,cnki,DIRECT
 
 DOMAIN-KEYWORD,kelee,DIRECT
 DOMAIN-SUFFIX,webvpn.ccu.edu.cn,DIRECT
