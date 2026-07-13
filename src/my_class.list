@@ -20,7 +20,7 @@
 ##———————————————————————Local_Domain_Rules————————————————————
 ###---------Local_Domain_Rules_Direct-----------
 
-DOMAIN-KEYWORD,notability.com,DIRECT
+#DOMAIN-KEYWORD,notability.com,DIRECT
 
 DOMAIN-KEYWORD,lun51.com,DIRECT
 DOMAIN-KEYWORD,cnki,DIRECT
