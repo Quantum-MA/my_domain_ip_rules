@@ -1,8 +1,7 @@
 # 自动生成文件: my_Remot_rule_DIRECT.list
 # 来源: src/my_rule.list
-# Generated at 2026-07-13T08:38:34.665211 UTC
+# Generated at 2026-07-26T07:57:43.776726 UTC
 # 无注释规则，直接使用
-DOMAIN-KEYWORD,notability.com,DIRECT
 DOMAIN-KEYWORD,lun51.com,DIRECT
 DOMAIN-KEYWORD,cnki,DIRECT
 DOMAIN-KEYWORD,kelee,DIRECT
