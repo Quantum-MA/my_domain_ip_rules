@@ -25,7 +25,7 @@ DOMAIN-KEYWORD,notability.com,DIRECT
 DOMAIN-KEYWORD,lun51.com,DIRECT
 DOMAIN-KEYWORD,cnki,DIRECT
 
-DOMAIN-KEYWORD,kelee,DIRECT
+
 DOMAIN-SUFFIX,webvpn.ccu.edu.cn,DIRECT
 DOMAIN-SUFFIX,cnki.net,DIRECT
 DOMAIN-SUFFIX,macxin.com,DIRECT
@@ -48,6 +48,17 @@ DOMAIN-KEYWORD,netease,DIRECT
 DOMAIN-SUFFIX,163.com,DIRECT
 DOMAIN-SUFFIX,game.163.com,DIRECT
 DOMAIN-SUFFIX,ym.163.com,DIRECT
+
+
+
+
+
+
+
+
+
+
+
 
 
 ###---------Local_Domain_Rules_REJECT-----------
@@ -117,6 +128,13 @@ DOMAIN-SUFFIX,300hu.com,REJECT
 
 
 
+
+
+
+
+
+
+
 ###---------Local_Domain_Rules_Proxy------------
 
 DOMAIN-SUFFIX,macked.app,默认代理
@@ -127,6 +145,8 @@ DOMAIN-SUFFIX,start.me,默认代理
 DOMAIN-SUFFIX,qichiyu.com,默认代理
 
 ####loon插件库
+
+DOMAIN-KEYWORD,kelee,默认代理
 DOMAIN-KEYWORD,yfamilys,默认代理
 ####bitwarden
 DOMAIN-SUFFIX,bitwarden.com,默认代理
@@ -134,6 +154,21 @@ DOMAIN-SUFFIX,bitwarden.eu,默认代理
 DOMAIN-SUFFIX,bitwarden.net,默认代理
 DOMAIN-SUFFIX,btwrdn.co,默认代理
 DOMAIN-SUFFIX,btwrdn.com,默认代理
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
