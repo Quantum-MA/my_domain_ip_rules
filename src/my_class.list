@@ -1,20 +1,3 @@
-##DOMAIN-SUFFIX,example.com,REJECT
-#DOMAIN,api.example.com,DIRECT
-#DOMAIN-KEYWORD,ads,REJECT
-#IP-CIDR,1.2.3.0/24,REJECT
-#URL-REGEX,^https?:\/\/ads\.,REJECT
-##- PROCESS-NAME,curl,DIRECT #匹配路由自身进程(curl直连)
-##- DOMAIN-SUFFIX,google.com,Proxy #匹配域名后缀(交由Proxy代理服务器组)
-##- DOMAIN-KEYWORD,google,Proxy #匹配域名关键字(交由Proxy代理服务器组)
-##- DOMAIN,google.com,Proxy #匹配域名(交由Proxy代理服务器组)
-##- DOMAIN-SUFFIX,ad.com,REJECT #匹配域名后缀(拒绝)
-##- IP-CIDR,127.0.0.0/8,DIRECT #匹配数据目标IP(直连)
-##- SRC-IP-CIDR,192.168.1.201/32,DIRECT #匹配数据发起IP(直连)
-##- DST-PORT,80,DIRECT #匹配数据目标端口(直连)
-##- SRC-PORT,7777,DIRECT #匹配数据源端口(直连)
-##- GEOSITE,category-public-tracker,DIRECT #匹配GEOSITE数据库规则(直连)
-##- DOMAIN-REGEX,^abc.*com,PROXY #正则匹配域名
-
 
 # ============================Local_Rules================================
 ##———————————————————————Local_Domain_Rules————————————————————
@@ -32,17 +15,17 @@ DOMAIN-SUFFIX,macxin.com,DIRECT
 DOMAIN-KEYWORD,fanyu,DIRECT
 DOMAIN-SUFFIX,fanyu.com,DIRECT
 
+
 DOMAIN-SUFFIX,day.app,DIRECT
 DOMAIN-KEYWORD,zotero,DIRECT
 DOMAIN-KEYWORD,aliyun.com,DIRECT
 
+
+
 ####匹配数据发起IP(直连)
-SRC-IP-CIDR,192.168.28.111/32,DIRECT
-
-
+#SRC-IP-CIDR,192.168.28.111/32,DIRECT
 
 ####网易游戏
-
 DOMAIN-SUFFIX,netease.com,DIRECT
 DOMAIN-KEYWORD,netease,DIRECT
 DOMAIN-SUFFIX,163.com,DIRECT
@@ -211,6 +194,34 @@ IP-CIDR,103.131.252.0/22,DIRECT,no-resolve
 ###---------Local_IP_Rules_Proxy------------
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+##DOMAIN-SUFFIX,example.com,REJECT
+#DOMAIN,api.example.com,DIRECT
+#DOMAIN-KEYWORD,ads,REJECT
+#IP-CIDR,1.2.3.0/24,REJECT
+#URL-REGEX,^https?:\/\/ads\.,REJECT
+##- PROCESS-NAME,curl,DIRECT #匹配路由自身进程(curl直连)
+##- DOMAIN-SUFFIX,google.com,Proxy #匹配域名后缀(交由Proxy代理服务器组)
+##- DOMAIN-KEYWORD,google,Proxy #匹配域名关键字(交由Proxy代理服务器组)
+##- DOMAIN,google.com,Proxy #匹配域名(交由Proxy代理服务器组)
+##- DOMAIN-SUFFIX,ad.com,REJECT #匹配域名后缀(拒绝)
+##- IP-CIDR,127.0.0.0/8,DIRECT #匹配数据目标IP(直连)
+##- SRC-IP-CIDR,192.168.1.201/32,DIRECT #匹配数据发起IP(直连)
+##- DST-PORT,80,DIRECT #匹配数据目标端口(直连)
+##- SRC-PORT,7777,DIRECT #匹配数据源端口(直连)
+##- GEOSITE,category-public-tracker,DIRECT #匹配GEOSITE数据库规则(直连)
+##- DOMAIN-REGEX,^abc.*com,PROXY #正则匹配域名
 
 
 
